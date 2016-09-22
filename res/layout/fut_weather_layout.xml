@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+	<RelativeLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/transparentblack">
+    	<LinearLayout
+        	android:id="@+id/day"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" 
+        	android:textColor="#FFFFFF"
+        	android:layout_marginTop="40dp">
+            <TextView
+            	android:id="@+id/day_one"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:text="周日 " 
+            	android:textColor="#FFFFFF"
+            	android:gravity="center_horizontal"/>
+        	<TextView
+            	android:id="@+id/day_two"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:text="周一 " 
+            	android:textColor="#FFFFFF"
+            	android:gravity="center_horizontal"/>
+        	<TextView
+            	android:id="@+id/day_three"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:text="周二 " 
+            	android:textColor="#FFFFFF"
+            	android:gravity="center_horizontal"/>
+        	<TextView
+            	android:id="@+id/day_four"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:text="周三 " 
+            	android:textColor="#FFFFFF"
+            	android:gravity="center_horizontal"/>
+         </LinearLayout>
+         <!--分界线 -->
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/shiline"
+             android:focusable="false"
+             android:layout_below="@+id/day"
+             android:focusableInTouchMode="false" />
+         <!--分界线  -->
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_below="@+id/day">
+             <LinearLayout
+        	    android:id="@+id/weather_name"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal" 
+        		android:textColor="#FFFFFF"
+        		android:layout_marginTop="20dp">
+        		<TextView
+            		android:id="@+id/weather_name_one"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="睛 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/weather_name_two"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="睛 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/weather_name_three"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+           			android:layout_weight="1"
+            		android:text="睛 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/weather_name_four"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="睛 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>        
+    		</LinearLayout>
+    		<!-- 分界线 -->
+    		<LinearLayout
+        	    android:id="@+id/wind_name"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal" 
+        		android:textColor="#FFFFFF"
+        		android:layout_marginTop="20dp">
+        		<TextView
+            		android:id="@+id/wind_one"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="东风 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/wind_two"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="东风 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/wind_three"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+           			android:layout_weight="1"
+            		android:text="东风 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/wind_four"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="东风 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>        
+    		</LinearLayout>
+    		<!--分界线  -->
+    		<LinearLayout
+        	    android:id="@+id/temp_name"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal" 
+        		android:textColor="#FFFFFF"
+        		android:layout_marginTop="20dp">
+        		<TextView
+            		android:id="@+id/temp_one"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="26-28 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/temp_two"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="23-28 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/temp_three"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+           			android:layout_weight="1"
+            		android:text="25-28 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>
+        		<TextView
+            		android:id="@+id/temp_four"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1"
+            		android:text="25-28 " 
+            		android:textColor="#FFFFFF"
+            		android:gravity="center_horizontal"/>        
+    		</LinearLayout>
+    		<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shiline"
+                android:focusable="false"
+                android:layout_below="@+id/day"
+                android:focusableInTouchMode="false" />
+            <!-- 分界线 -->
+        	<com.huaqin.weather.utils.TrendView
+            	android:id="@+id/trendView"
+            	android:layout_width="fill_parent"
+                android:layout_height="300dp">
+            </com.huaqin.weather.utils.TrendView>
+            <!--  --> 	
+        </LinearLayout>
+         
+    </RelativeLayout>
+</RelativeLayout>

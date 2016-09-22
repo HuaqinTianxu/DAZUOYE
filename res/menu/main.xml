@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >  
+      
+    <item   
+       android:id="@+id/add_or_del_city"  
+       android:title="选择城市"  
+     />  
+     <item   
+        android:id="@+id/share_friend"  
+        android:title="分享给好友"  
+      />  
+      <item   
+        android:id="@+id/share_weather"  
+        android:title="分享到朋友圈"  
+      /> 
+</menu>  
